@@ -4,6 +4,8 @@ I created this sample to report an error observed OpenTelemetry auto-instrumenta
 The spring-boot application is always run with jvm options `-javaagent:opentelemetry-javaagent.jar -Dotel.traces.exporter=jaeger -Dotel.metrics.exporter=none -Dotel.exporter.jaeger.endpoint=http://localhost:14250`  
 To reproduce the observed error I use the sample in `http://localhost:8080/controller/backendmap`.
 
+see https://github.com/open-telemetry/opentelemetry-java-instrumentation/issues/5186 
+
 Starting the sample:
 
 * start [jaeger](https://www.jaegertracing.io/docs/1.30/getting-started/) locally
