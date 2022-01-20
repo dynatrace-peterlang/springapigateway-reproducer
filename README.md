@@ -1,8 +1,8 @@
 # Reproducer sample using Spring Boot Api Gateway
 
 I created this sample to report an error observed OpenTelemetry auto-instrumentation agent.
-The spring-boot application is always run with jvm options `-javaagent:opentelemetry-javaagent.jar -Dotel.traces.exporter=jaeger -Dotel.metrics.exporter=none -Dotel.exporter.jaeger.endpoint=http://localhost:14250`
-I always call the sample in `http://localhost:8080/controller/backendmap`.
+The spring-boot application is always run with jvm options `-javaagent:opentelemetry-javaagent.jar -Dotel.traces.exporter=jaeger -Dotel.metrics.exporter=none -Dotel.exporter.jaeger.endpoint=http://localhost:14250`  
+To reproduce the observed error I use the sample in `http://localhost:8080/controller/backendmap`.
 
 Starting the sample:
 
